@@ -25,9 +25,11 @@ Route::post('/temujanji/delete/{temujanji}','App\Http\Controllers\TemujanjiContr
 
 Route::get('/temujanji/{temujanji}','App\Http\Controllers\TemujanjiController@show')->name('temujanji.show');
 
+Route::get('/temujanji/adminindex','App\Http\Controllers\AdminController@index')->name('temujanji.adminindex');
+
 Route::get('/temujanji','App\Http\Controllers\TemujanjiController@index')->name('temujanji.index');
 
-Route::get('/temujanji/adminindex','App\Http\Controllers\AdminController@index')->name('temujanji.adminindex');
+
 
 Auth::routes();
 
