@@ -25,7 +25,7 @@ class AdminController extends Controller
     public function index()
     {
         $temujanjis=Temujanji::latest()->get();
-        return view('temujanji.adminindex',compact('temujanjis'));
+        return view('admin',compact('temujanjis'));
     }
 
 }
